@@ -39,6 +39,8 @@ abline(reg=lm(AirPassengers ~ time(AirPassengers)))
 ### Display the cycle of the time series
 cycle(AirPassengers)
 
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/08.png">
+
 ### Plot the mean values for each cycle of the time series
 plot(aggregate(AirPassengers, FUN = mean))
 
