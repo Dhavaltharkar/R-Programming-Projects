@@ -49,6 +49,8 @@ plot(aggregate(AirPassengers, FUN = mean))
 ### Create a boxplot of the time series grouped by cycles
 boxplot(AirPassengers ~ cycle(AirPassengers))
 
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/10.png">
+
 ### Plot the autocorrelation function (ACF) of the logarithm of the time series
 
 acf(log(AirPassengers))
