@@ -55,10 +55,17 @@ boxplot(AirPassengers ~ cycle(AirPassengers))
 
 acf(log(AirPassengers))
 
+<img src ="https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/11.png">
+
 ### Plot the ACF of the first difference of the logarithm of the time series
 acf(diff(log(AirPassengers)))
+
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/12.png">
 
 ### Fit an ARIMA (AutoRegressive Integrated Moving Average) model to the time series
 ### The model has a non-seasonal difference order of 1, a moving average order of 1,
 ### and a seasonal difference order of 1 with a seasonal moving average order of 1.
 fit <- arima(log(AirPassengers), c(0, 1, 1), seasonal = list(order = c(0, 1, 1), period = 12))
+
+
+<img  src= "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/13.png">
