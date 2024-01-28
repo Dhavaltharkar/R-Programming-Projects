@@ -4,7 +4,7 @@ data("AirPassengers")
 ### Display the class of the AirPassengers object
 class(AirPassengers)
 
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/01.png?token=GHSAT0AAAAAACNOJWAWRPLUQMAL6GFWGMWCZNWCRAQ">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/01.png?token=GHSAT0AAAAAACNOJWAW5ZERHE573P2XBA7SZNWCYVQ">
 
 ### Display the start date of the time series
 start(AirPassengers)
