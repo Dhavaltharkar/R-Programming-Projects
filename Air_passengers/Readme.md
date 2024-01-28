@@ -29,7 +29,7 @@ summary(AirPassengers)
 ### Plot the time series data
 plot(AirPassengers)
 
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/06.png?token=GHSAT0AAAAAACNOJWAW6UFGTBLWC2WXOVXAZNWCVHQ">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/06.png?token=GHSAT0AAAAAACNOJWAWHL5BGZYP6FXH52TGZNWC2MQ">
 
 ### Add a regression line to the plot using linear regression
 abline(reg=lm(AirPassengers ~ time(AirPassengers)))
