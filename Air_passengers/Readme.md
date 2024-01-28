@@ -44,6 +44,8 @@ cycle(AirPassengers)
 ### Plot the mean values for each cycle of the time series
 plot(aggregate(AirPassengers, FUN = mean))
 
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/09.png">
+
 ### Create a boxplot of the time series grouped by cycles
 boxplot(AirPassengers ~ cycle(AirPassengers))
 
