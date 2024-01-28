@@ -10,20 +10,32 @@ class(AirPassengers)
 ### Display the start date of the time series
 start(AirPassengers)
 
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/02.png?token=GHSAT0AAAAAACNOJWAW45ATU5G36RM5YLLWZNWCTKA">
+
 ### Display the end date of the time series
 end(AirPassengers)
+
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/03.png?token=GHSAT0AAAAAACNOJWAWP7P7VZGSEL733ZFKZNWCUWQ">
 
 ### Display the frequency of the time series
 frequency(AirPassengers)
 
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/04.png?token=GHSAT0AAAAAACNOJWAW6UFGTBLWC2WXOVXAZNWCVHQ">
+
 ### Display a summary of the time series, including mean, median, min, max, etc.
 summary(AirPassengers)
+
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/05.png?token=GHSAT0AAAAAACNOJWAW6UFGTBLWC2WXOVXAZNWCVHQ">
 
 ### Plot the time series data
 plot(AirPassengers)
 
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/06.png?token=GHSAT0AAAAAACNOJWAW6UFGTBLWC2WXOVXAZNWCVHQ">
+
 ### Add a regression line to the plot using linear regression
 abline(reg=lm(AirPassengers ~ time(AirPassengers)))
+
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Air_passengers/Markdown/07.png?token=GHSAT0AAAAAACNOJWAW6UFGTBLWC2WXOVXAZNWCVHQ">
 
 ### Display the cycle of the time series
 cycle(AirPassengers)
