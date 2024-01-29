@@ -73,7 +73,7 @@ nb <- NbClust(irisData, method = "kmeans")
 
 hist(nb$Best.nc[1,], breaks =  15, main = "Histogram for Number of Clusters")
 
-<img src =https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/12.PNG">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/12.PNG">
 
 install.packages("vegan")
 
@@ -84,23 +84,4 @@ modeldata <- cascadeKM(irisData, 1, 10, iter =100)
 plot(modeldata, sortg = TRUE)
 
 <img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/13.PNG">
-
-modeldata$results[2,]
-
-which.max(modeldata$results[2,])
-
-
-install.packages("factoextra")
-
-install.packages("clustertend")
-
-install.packages("hopkins")
-
-library("factoextra")
-
-library("clustertend")
-
-library("hopkins")
-
-<img src = "">
 
