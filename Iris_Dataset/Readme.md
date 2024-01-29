@@ -24,12 +24,11 @@ summary(pca_data)
 
 biplot(pca_data)
 
-
-<img src = "">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/05.PNG">
 
 screeplot(pca_data, type = "lines")
 
-<img src = "">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/06.PNG">
 
 model2 = pca_data$loadings[,1]
 model_scores <- as.matrix(data_iris)%*%model2
@@ -37,9 +36,8 @@ mod1<- naiveBayes(iris[,1:4],iris[, 5])
 mod2 <-naiveBayes(model_scores,iris[,5])
 table(predict(mod1,iris[,1:4]),iris[,5])
 
-<img src = "">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/07.png">
 
 table(predict(mod2,model_scores),iris[,5])
 
-
-<img src = "">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/08.PNG">
