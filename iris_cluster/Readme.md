@@ -59,15 +59,47 @@ for (i in 1:15) {
 
 plot(x = 1:15, y = totalwSS, type = "b", xlab ="Number of Clusters", ylab = "Within groups sum-of-squares")
 
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/034.PNG">
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/05.PNG">
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/06.PNG">
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/07.PNG"?
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/08.PNG">
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/09.PNG">
 <img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/10.PNG">
+
+install.packages("NbClust")
+
+library("NbClust")
+
+par(mar = c(2,2,2,2))
+
+nb <- NbClust(irisData, method = "kmeans")
+
+hist(nb$Best.nc[1,], breaks =  15, main = "Histogram for Number of Clusters")
+
 <img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/11.PNG">
+
+install.packages("vegan")
+
+library("vegan")
+
+modeldata <- cascadeKM(irisData, 1, 10, iter =100)
+
+plot(modeldata, sortg = TRUE)
+
 <img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/12.PNG">
+
+modeldata$results[2,]
+
+which.max(modeldata$results[2,])
+
 <img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/13.PNG">
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/14.PNG">
-<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/15.PNG">
+
+install.packages("factoextra")
+
+install.packages("clustertend")
+
+install.packages("hopkins")
+
+library("factoextra")
+
+library("clustertend")
+
+library("hopkins")
+
+<img src = "">
+
