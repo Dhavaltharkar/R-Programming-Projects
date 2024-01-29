@@ -85,3 +85,37 @@ plot(modeldata, sortg = TRUE)
 
 <img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/13.PNG">
 
+install.packages("factoextra")
+
+install.packages("clustertend")
+
+install.packages("hopkins")
+
+library("factoextra")
+
+library("clustertend")
+
+library("hopkins")
+
+genx <- function(x) { runif(length(x), min(x), max(x))}
+
+random_df <- as.data.frame(apply(iris[, -5], 2, genx))
+
+iris[, -5] <- scale(iris[, -5])
+
+random_df <- scale(random_df)
+
+res <- get_clust_tendency(iris[, -5], n = nrow(iris) - 1, graph = FALSE)
+
+res$hopkins_stat
+
+hopkins(iris[, -5])
+
+res <- get_clust_tendency(random_df, n = nrow(random_df) - 1, graph = FALSE)
+
+res$hopkins_stat
+
+<img src ="https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/iris_cluster/Markdown/15.PNG">
+
+
+
