@@ -1,15 +1,19 @@
 data_iris <-iris[1:4]
+
 cov_data <- cov(data_iris)
+
 Eigen_data <- eigen(cov_data)
+
 pca_data <- princomp(data_iris, cor = 'False')
+
 Eigen_data$values
 
-<img src = "">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/01.PNG">
 
 pca_data$loadings[,1:4]
 
 
-<img src = "">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/02.PNG">
 
 Eigen_data$vectors
 
