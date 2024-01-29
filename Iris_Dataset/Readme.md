@@ -12,16 +12,15 @@ Eigen_data$values
 
 pca_data$loadings[,1:4]
 
-
 <img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/02.PNG">
 
 Eigen_data$vectors
 
-<img src = "">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/03.PNG">
 
 summary(pca_data)
 
-<img src = "">
+<img src = "https://raw.githubusercontent.com/Dhavaltharkar/R-Programming-Projects/main/Iris_Dataset/Markdown/04.PNG">
 
 biplot(pca_data)
 
